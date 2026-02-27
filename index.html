@@ -1180,10 +1180,6 @@
     </div>
     <p class="contact-subtitle">I'm actively looking for full-time opportunities in ML Engineering and Data Science. Feel free to reach out!</p>
     <div class="contact-links">
-      <a id="email-link" class="contact-link email" style="cursor:pointer;">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-        <span id="email-text"></span>
-      </a>
       <a href="https://www.linkedin.com/in/pranav-shashidhara-8a614595/" target="_blank" rel="noopener noreferrer" class="contact-link linkedin">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
         LinkedIn
@@ -1199,20 +1195,6 @@
     <p>Built with love · <span>Pranav Shashidhara</span> · 2026 · College Park, MD</p>
   </footer>
 
-  <script>
-    // Build email at runtime so Cloudflare cannot detect and obfuscate it
-    (function() {
-      var u = 'pshashid';
-      var d = 'umd.edu';
-      var e = u + '@' + d;
-      var el = document.getElementById('email-link');
-      var tx = document.getElementById('email-text');
-      if (el && tx) {
-        el.href = 'mai' + 'lto:' + e;
-        tx.textContent = e;
-      }
-    })();
-  </script>
 
 </body>
 </html>
