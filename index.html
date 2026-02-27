@@ -844,33 +844,47 @@
           <div class="skill-tags">
             <span class="tag tag-purple">PyTorch</span>
             <span class="tag tag-purple">TensorFlow</span>
+            <span class="tag tag-purple">Keras</span>
             <span class="tag tag-purple">LangChain</span>
             <span class="tag tag-purple">Hugging Face</span>
+            <span class="tag tag-purple">Diffusers</span>
             <span class="tag tag-purple">Scikit-learn</span>
+            <span class="tag tag-purple">XGBoost</span>
+            <span class="tag tag-purple">LightGBM</span>
             <span class="tag tag-purple">RAG</span>
             <span class="tag tag-purple">Diffusion Models</span>
+            <span class="tag tag-purple">Multi-Task Learning</span>
+            <span class="tag tag-purple">Transformer Fine-Tuning</span>
+            <span class="tag tag-purple">Bayesian Optimization</span>
             <span class="tag tag-purple">LLMs</span>
           </div>
         </div>
         <div class="skill-group">
           <h4>Infrastructure & Cloud</h4>
           <div class="skill-tags">
-            <span class="tag tag-blue">AWS (Bedrock / SageMaker / EC2)</span>
+            <span class="tag tag-blue">AWS (Bedrock / SageMaker / S3 / EC2 / Lambda)</span>
             <span class="tag tag-blue">Docker</span>
             <span class="tag tag-blue">Kubernetes</span>
             <span class="tag tag-blue">ONNX</span>
             <span class="tag tag-blue">MLflow</span>
+            <span class="tag tag-blue">Weights & Biases</span>
             <span class="tag tag-blue">FastAPI</span>
+            <span class="tag tag-blue">Flask</span>
+            <span class="tag tag-blue">HPC</span>
           </div>
         </div>
         <div class="skill-group">
           <h4>Data</h4>
           <div class="skill-tags">
             <span class="tag tag-pink">PySpark</span>
+            <span class="tag tag-pink">Databricks</span>
             <span class="tag tag-pink">MongoDB</span>
             <span class="tag tag-pink">Pinecone</span>
             <span class="tag tag-pink">PostgreSQL</span>
             <span class="tag tag-pink">ETL Pipelines</span>
+            <span class="tag tag-pink">Parquet</span>
+            <span class="tag tag-pink">Pandas</span>
+            <span class="tag tag-pink">NumPy</span>
             <span class="tag tag-pink">Tableau</span>
           </div>
         </div>
@@ -892,10 +906,11 @@
         <div class="timeline-role">Machine Learning Intern — Graduate Hourly</div>
         <div class="timeline-company">University of Maryland MTech Ventures · NSF I-Corps · College Park, MD</div>
         <ul class="timeline-bullets">
-          <li>Designed an interactive data exploration app using LLM agentic workflows (tool-calling + RAG) to query and summarize large scraped datasets, serving 17 team members.</li>
-          <li>Optimized a multi-source scraping pipeline (BeautifulSoup, PhantomBuster, Hunter.io), aggregating and cleaning 8k+ records for actionable insights.</li>
-          <li>Deployed an LLM-powered personalized email generator — 350+ emails sent in one week with a 10% reply rate.</li>
-          <li>Built 10+ Salesforce dashboards and ran A/B testing + sentiment analysis on 30+ customer discovery calls.</li>
+          <li>Designed and deployed an LLM-powered data exploration tool using tool-calling and RAG to query and summarize scraped datasets at scale, used by 17 team members.</li>
+          <li>Built and deployed an LLM-driven personalized email generator with agentic workflows, delivering 350+ emails in one week at a 10% reply rate.</li>
+          <li>Built an interactive Autogen tutorial integrating multiple tools to demonstrate core agentic workflow patterns (tool-calling, multi-agent orchestration, human-in-the-loop); adopted as a team reference guide.</li>
+          <li>Optimized a multi-source data scraping pipeline aggregating 8k+ cleaned records for downstream ML analysis.</li>
+          <li>Applied A/B testing and sentiment analysis on 30+ customer discovery calls; built 10+ Salesforce dashboards to surface actionable metrics.</li>
         </ul>
       </div>
 
@@ -904,11 +919,10 @@
         <div class="timeline-role">Technical Analyst</div>
         <div class="timeline-company">Oracle · Bangalore, India</div>
         <ul class="timeline-bullets">
-          <li>Engineered and owned 3 critical full-stack Oracle APEX applications serving 30+ stakeholders across 5 teams; primary technical owner for quarter-end financial reporting.</li>
-          <li>Automated workflows using PL/SQL, reducing manual effort by 15 hrs/week and minimizing errors.</li>
-          <li>Designed scalable ETL workflows for 200GB+ data; optimized queries to cut execution time by 50%.</li>
-          <li>Led data migration to Oracle Cloud for 2+ critical applications; mentored 2 junior engineers.</li>
-          <li>Received a <strong>recognition award</strong> for resolving critical data integrity issues under pressure.</li>
+          <li>Designed scalable ETL workflows processing 200GB+ (65M+ records); optimized SQL queries to reduce execution time by 50%.</li>
+          <li>Engineered 3 full-stack Oracle APEX applications serving 30+ stakeholders across 5 teams; ensured data integrity for financial quarter-end reporting.</li>
+          <li>Automated PL/SQL workflows, saving 15 hours/week of manual effort; received a <strong>recognition award</strong> for exceptional contributions.</li>
+          <li>Mentored 2 junior engineers on data workflows, coding best practices, and project delivery.</li>
         </ul>
       </div>
 
@@ -942,9 +956,10 @@
           </div>
         </div>
         <div class="project-title">Segmentation-Guided Diffusion Model</div>
-        <div class="project-desc">Controllable brain MRI synthesis on BraTS 2021 — enabling counterfactual tumor removal via MAT. End-to-end PyTorch pipeline from 3D NIfTI to 2D slices. Achieved FID: 219→58, KID: 0.79→0.13, Dice: 0.15→0.69.</div>
+        <div class="project-desc">Trained 4 model variants (unconditional, seg-guided, MAT ablation, evaluation U-Net) for a rigorous ablation study of pathology-controlled generative models on BraTS 2021. Novel Mask-Ablated Training (MAT) reduced FID 219→58, KID 0.79→0.13, SSIM 0.26→0.72, Dice 0.15→0.69. Full PyTorch pipeline: 3D NIfTI → 2D slice preprocessing, diffusion training, and multi-metric evaluation (FID, KID, SSIM, GenDice, DiffMapIoU).</div>
         <div class="project-meta">
           <span class="project-badge badge-highlight">FID: 219→58</span>
+          <span class="project-badge badge-highlight">SSIM: 0.26→0.72</span>
           <span class="project-badge badge-normal">PyTorch</span>
           <span class="project-badge badge-normal">Diffusion</span>
           <span class="project-badge badge-normal">U-Net</span>
@@ -993,11 +1008,12 @@
           </div>
         </div>
         <div class="project-title">Country Debt Default Prediction</div>
-        <div class="project-desc">Predicted sovereign debt default risk using World Bank API data. LightGBM with Optuna hyperparameter tuning on heavily imbalanced data — achieving 99% accuracy and 97% macro F1-score.</div>
+        <div class="project-desc">Predicted sovereign debt default using World Bank API data. Applied ADASYN oversampling and class weighting to handle severe class imbalance. Automated hyperparameter search with Optuna, yielding +20% improvement for the minority class. LightGBM achieved 99% accuracy and 97% macro F1-score.</div>
         <div class="project-meta">
           <span class="project-badge badge-highlight">97% F1-Score</span>
           <span class="project-badge badge-normal">LightGBM</span>
           <span class="project-badge badge-normal">Optuna</span>
+          <span class="project-badge badge-normal">ADASYN</span>
           <span class="project-badge badge-normal">World Bank API</span>
         </div>
       </div>
@@ -1010,12 +1026,13 @@
           </div>
         </div>
         <div class="project-title">Movie Recommendation System</div>
-        <div class="project-desc">Preprocessed 100M records from the Netflix Prize dataset (Databricks / PySpark). Built user-user, movie-movie collaborative filtering with Pearson correlation, matrix factorization, and a Restricted Boltzmann Machine.</div>
+        <div class="project-desc">Preprocessed 100M records from the Netflix Prize dataset via PySpark on Databricks. Built User-User and Movie-Movie Collaborative Filtering with Matrix Factorization — achieving test RMSE of 0.917, matching the Netflix Prize winning benchmark (~0.910). Data stored in Parquet on Amazon S3. Implemented RBM as an advanced model with lookup dictionaries for reduced time complexity.</div>
         <div class="project-meta">
-          <span class="project-badge badge-highlight">100M Records</span>
+          <span class="project-badge badge-highlight">RMSE: 0.917</span>
           <span class="project-badge badge-normal">PySpark</span>
           <span class="project-badge badge-normal">RBM</span>
           <span class="project-badge badge-normal">Collaborative Filtering</span>
+          <span class="project-badge badge-normal">Amazon S3</span>
         </div>
       </div>
 
