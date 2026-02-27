@@ -72,7 +72,7 @@ GitHub Pages will reflect changes within a minute or two.
 - **Styling** — Vanilla CSS with custom properties
 - **Hosting** — GitHub Pages (static)
 
-## Contact
+## Contact Me!
 
 - Email: [pshashid@umd.edu](mailto:pshashid@umd.edu)
 - LinkedIn: [linkedin.com/in/pranav-shashidhara-8a614595](https://www.linkedin.com/in/pranav-shashidhara-8a614595/)
